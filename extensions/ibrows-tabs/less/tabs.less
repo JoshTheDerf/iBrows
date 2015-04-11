@@ -1,0 +1,164 @@
+.titlebar .tabstrip {
+  float: left;
+  max-width: calc(~"100% - 186px");
+  overflow: hidden;
+  -webkit-app-region: no-drag;
+  -webkit-user-select: none;
+  cursor: default;
+  
+  .tab {
+    display: inline-block;
+    overflow: hidden;
+    height: 35px;
+    padding: 5px;
+    width: 150px;
+    color: #666;
+    font-family: Arial, Helveceta, sans-serif;
+    transition: all 150ms;
+    
+    &.active {
+      width: 200px !important;
+      background-color: #ffffff;
+      
+      .title {
+        width: 150px !important;
+      }
+    }
+    
+    &.mini {
+      .closeBtn {
+        width: 0px;
+        opacity: 0;
+      }
+      
+      &:hover {
+        img {
+          opacity: 0;
+          width: 0px;
+        }
+        
+        .title {
+          display: none;
+        }
+        
+        .closeBtn {
+          width: 16px;
+          opacity: 1;
+        }
+      }
+    }
+    
+    &.editing {
+    }
+    
+    img, .title, .closeBtn, .pointer {
+      opacity: 1;
+      display: inline-block;
+      transition: all 150ms;
+      cursor: default;
+      float: left;
+      
+      &.hidden {
+        width: 0px !important;
+        opacity: 0;
+      }
+    }
+    
+    span.title {
+      font-size: 12px;
+      padding-top: 6px;
+      width: 98px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      height: 26px;
+    }
+    
+    input.title {
+      font-size: 12px;
+      width: 98px;
+      height: 35px;
+      margin-top: -5px;
+      outline: none;
+      border: none;
+      box-sizing: content-box;
+      
+      &:focus {
+        background-color: #FFF;
+        &:hover {
+          cursor: text;
+        }
+      }
+    }
+    
+    .closeBtn {
+      position: relative;
+      width: 16px;
+      height: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      float: right;
+      
+      &:hover {
+        color: #800;
+      }
+    }
+    
+    img, .pointer {
+      margin-top: 5px;
+      margin-left: 2px;
+      margin-right: 2px;
+      width: 16px;
+      height: 16px;
+      pointer-events: none;
+    }
+    
+    .pointer i.spin {
+      margin-left: -2px;
+      &::before {
+        -webkit-animation: spinCW 1s infinite linear;
+      }
+      
+      &.reverse::before {
+        -webkit-animation: spinCCW 1s infinite linear;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes spinCW {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); }
+}
+
+@-webkit-keyframes spinCCW {
+  0% { -webkit-transform: rotate(359deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+
+.pagearea {
+  display: block;
+  background-color: #EEE;
+  width: 100%;
+  height: 100%;
+  
+  webview {
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  webview.in {
+    z-index: 1000;
+    opacity: 1;
+  }
+  
+  webview.out {
+    z-index: 500;
+    opacity: 0;
+  }
+}

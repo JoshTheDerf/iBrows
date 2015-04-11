@@ -1,0 +1,9 @@
+{
+  "name": "ibrows-tabs",
+  "version": "0.1.0",
+  "description": "Tabs for iBrows. Surprise.",
+  "main": "ibrows-tabs.js",
+  "dependencies": {
+    "ibrows-shell": "*"
+  }
+}
