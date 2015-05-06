@@ -1,4 +1,4 @@
-![iBrows Logo](resources/app/images/icon.64.png)iBrows
+![iBrows Logo](resources/app/images/icon.64.png) iBrows
 ===
 
 ![iBrows Screenshot](resources/app/images/screenshots/screenshot01.png)
@@ -7,7 +7,7 @@ iBrows is a somewhat sarcastic attempt at an "even more minimalist" web browser 
 
 All non-webpage functions (tabs, url entry, dev tools, window controls, etc.) are kept in the single titlebar.
 
-iBrows is incredibly extensible and inherently easy to modify and theme. Based on [atom-shell (electron)](http://github.com/atom/atom-shell), it is literally a web browser in a web browser.
+iBrows is incredibly extensible and inherently easy to modify and theme. Based on [electron](http://github.com/atom/electron), it is literally a web browser in a web browser.
 
 This was a week-long project and will likely not be worked on further unless some reason arises. The current web browsers are good enough as it is. :)
 
@@ -23,13 +23,14 @@ This was a week-long project and will likely not be worked on further unless som
   
 ##Usage:
  1. Clone or download this repository.
- 2. Download [atom-shell](http://github.com/atom/atom-shell/). copy everything except the resources folder into the root directory of the downloaded iBrows repository. Optionally rename atom-shell(.exe) to iBrows(.exe).
- 3. Run atom-shell(.exe)/iBrows(.exe).
+ 2. Download [electron](http://github.com/atom/electron/). copy everything except the resources folder into the root directory of the downloaded iBrows repository. Optionally rename electron(.exe) to iBrows(.exe).
+ 3. Run electron(.exe)/iBrows(.exe).
 
 ##Notes:
  * This project was written entirely with the Atom editor, an incredibly extensible text editor for which the back-end for iBrows was originally written for.
  * The C# implementation will be called MonoBrow.
  * There is no url autocomplete or smart bar. Type the urls yourself. (You may omit the protocol though).
+ * Also bugs. Lots of them.
  
 ##License
 ```
