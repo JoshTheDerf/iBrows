@@ -1,0 +1,7 @@
+{
+	"name": "ibrows",
+	"version": "0.1.2",
+	"description": "A web browser that is even more minimal. Yeah. Didn't see that coming.",
+	"author": "joshua Bemenderfer",
+	"main": "src/backend.js"
+}
