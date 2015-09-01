@@ -1,7 +1,7 @@
-![iBrows Logo](resources/app/images/icon.64.png) iBrows
+![iBrows Logo](src/images/icon.64.png) iBrows
 ===
 
-![iBrows Screenshot](resources/app/images/screenshots/screenshot01.png)
+![iBrows Screenshot](src/images/screenshots/screenshot01.png)
 
 iBrows is a somewhat sarcastic attempt at an "even more minimalist" web browser stemming from a joke about what Apple's answer to Microsoft's Spartan should be.
 
