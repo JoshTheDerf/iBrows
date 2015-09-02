@@ -1,7 +1,7 @@
 ![iBrows Logo](src/images/icon.64.png) iBrows
 ===
 
-![iBrows Screenshot](src/images/screenshots/screenshot01.png)
+![iBrows Screencast](media/screenrecord01.gif)
 
 iBrows is a somewhat sarcastic attempt at an "even more minimalist" web browser stemming from a joke about what Apple's answer to Microsoft's Spartan should be.
 
@@ -9,30 +9,28 @@ All non-webpage functions (tabs, url entry, dev tools, window controls, etc.) ar
 
 iBrows is incredibly extensible and inherently easy to modify and theme. Based on [electron](http://github.com/atom/electron), it is literally a web browser in a web browser.
 
-This was a week-long project and will likely not be worked on further unless some reason arises. The current web browsers are good enough as it is. :)
-
-##Features:
+## Features:
   * Written with web technologies, easily extended and modified.
   * No annoying buttons or unused features like bookmarks, history, auto-completion, settings, search engines, or the likes.
-  * No keyboard shortcuts, who uses those anyways?
+  * No keyboard shortcuts, who uses those anyways? (I do. TODO: Add)
   * THE URL BAR IS IN THE TAB! IT SAVES NEARLY 28 PIXELS OF VERTICAL SPACE!
-  * Based on Chromium 41 and io.js.
-  * You can open lots of tabs. Yay. -_-
+  * Based on Chromium 44 and io.js.
+  * You can open lots of tabs. Yay.
   * Dev tools button that does stuff.
   * Take a look at `extensions/ibrows-tabs/`, `resources/app/js/extension.js`, and `resources/app/js/api.js` for information on writing your own extensions. Be warned, the code is pretty much entirely undocumented.
-  
-##Usage:
+
+## Usage:
  1. Clone or download this repository.
  2. Download [electron](http://github.com/atom/electron/). copy everything except the resources folder into the root directory of the downloaded iBrows repository. Optionally rename electron(.exe) to iBrows(.exe).
  3. Run electron(.exe)/iBrows(.exe).
 
-##Notes:
+## Notes:
  * This project was written entirely with the Atom editor, an incredibly extensible text editor for which the back-end for iBrows was originally written for.
  * The C# implementation will be called MonoBrow.
  * There is no url autocomplete or smart bar. Type the urls yourself. (You may omit the protocol though).
  * Also bugs. Lots of them.
- 
-##License
+
+## License
 ```
 The MIT License (MIT)
 

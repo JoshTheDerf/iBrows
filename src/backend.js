@@ -44,7 +44,7 @@ app.on('ready', function () {
     show: false,
     frame: false,
     transparent: true,
-    icon: __dirname + '/images/icon.png',
+    icon: __dirname + '/images/icon.mono.64.png',
     x: 0,
     y: 0,
     width: size.width,
